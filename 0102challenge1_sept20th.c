@@ -1,5 +1,5 @@
 /* Challenge problems for section 0102 of ENEE140.
- * Created September 19th 2024 by Samantha Otazo.*/
+ * Created September 20th 2024 by Samantha Otazo.*/
 
 #include <stdio.h>
 
