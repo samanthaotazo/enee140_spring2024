@@ -8,13 +8,16 @@ int main() {
 
 
     //demonstrate integer overflow
-    printf("%u", UINT_MAX+1);
+    printf("%u", UINT_MAX+1); // ex. binary 1111+1 = 10000 but the leftmost one gets discarded
 
     a = b +c; //
     printf("The result of %d + %.1f is %d\n", b, c, a);
     //the value of a is no longer 3, it is 12. b and c have not changed
+
+    //we see a increase by one:
     printf("After ++a, a = %d\n", ++a); //note that ++a computes before the printf
-    //we see a 
+
+    //we see a++ executes after printf - order of operations
     printf("After a++, a = %d\n", a++);
     printf("a is now %d\n", a);
 
