@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    //Base 10 would represent the number 213 as 10^2*2 + 10^1*1 + 10^0*3
+    //We split 213 into 200 + 10 + 3
+    
+    //Representing something in base 2 is conceptually similar
+    //Let's use 9 as an example
+    //We see 9 = 8 + 1 -> 1*2^3 + 0*2^2 + 0*2^1 + 1*2^0
+    
+    //to convert from base 10 to base 2, we want to divide by the largest power of 2 that will fit inside
+    //We see that 2^4 = 16 is larger than 9, so we skip this
+
+  //TO BE CONTINUED ON FRIDAY
+    return 0;
+}
