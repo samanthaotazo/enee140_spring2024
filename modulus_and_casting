@@ -28,8 +28,8 @@ program to check your answer. Your program will ask for two integers and output 
 
     printf("Result withOUT parentheses is %f\n", 5 % 3 * 2 + 12 / 5 - - 3.6 / 9);
     printf("Result with parentheses is %f\n", ((5 % 3) * 2) + (12 / 5) - (- 3.6 / 9));
+    //we see the second negative sign before 3.6 is an unary minus, which is at the top of our chart
     //we know mod, multiplication, and division have precedence over addition and subtraction
-    //we can treat negative signs as multiplication by negative 1 so these also have precedence over addition/subtraction
     //for operators that have the "same" precedence according to the chart, we will evaluate them from left to right
 
     //Explicit cast: we name the type conversion
