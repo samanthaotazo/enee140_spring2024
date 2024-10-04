@@ -15,7 +15,7 @@ int main() {
     scanf("%d", &radius);
     
     for (count = 0; count < 4; count++){
-        printf("Our %d position is at (%.2f, %.2f)\n", count +1, radius * cos(angle - (M_PI/2)* count), radius * sin(angle - M_PI / 2 * count));
+        printf("Our #%d position is at (%.2f, %.2f)\n", count +1, radius * cos(angle - (M_PI/2)* count), radius * sin(angle - M_PI / 2 * count));
     }
     return 0;
 }
