@@ -23,7 +23,7 @@ int main(void) {
     fgets(string, MAXSIZE, stdin);
 
     //capitalize lowercase letters only
-    for (i = 0; i < strlen(string); i++) { //make sure you only use strlen after you have stuff in your string
+    for (i = 0; i < strlen(string) && (string[i] != '\0'); i++) { //make sure you only use strlen after you have stuff in your string
         if (string[i] >= 'a' && string[i] <='z') {
             string[i] = string[i] + 'A' - 'a';
         }
