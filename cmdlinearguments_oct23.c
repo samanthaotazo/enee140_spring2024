@@ -12,6 +12,7 @@ int main (int argc, char *argv[]){
 
     if (argc > 1){
         printf("The second argument is %s.\n", argv[1]);
+        printf("The first character in the second argument is %c\n", argv[1][0]);
     }
 /*strncmp is included in the string.h library
  *
