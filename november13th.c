@@ -40,6 +40,7 @@ int main(int argc, char *argv[])
     fclose(file);
     return 0;
 }
+//correction: Check if the word is empty before quitting rather than using a state variable.
 int next_word(const char line[], char word[], int size){
     static int count_invocation = 0;
     int word_index = 0;
