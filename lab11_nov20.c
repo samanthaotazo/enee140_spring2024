@@ -9,11 +9,13 @@ a[m+2] takes the value of the old a[m+1], etc.).
 
 #include <stdio.h>
 
+void printArray(int arr[]);
+
 int main(){
     int a[] = {2, 3, 5, 7, 11, 13, 17, 19};
     int k,m,x;
     int temp, index;
-    printf("Enter 3 integers k, m, and x");
+    printf("Enter 3 integers k, m, and x:\t");
     scanf("%d %d %d", &k, &m, &x);
 
     //Safety Check K between 0 and 7
@@ -23,7 +25,12 @@ int main(){
     }
 
     //remove a[k] from the array and shift all elements left
-    for (;;){}
+    for (index = k;index < 7;index++){
+        a[index] = a[index+1];
+    }
+    printf("After removing a[k]:\n");
+    printArray(a);
+
 
     //Safety Check K between 0 and 7
     if (m < 0 || m > 7){
@@ -33,4 +40,10 @@ int main(){
     //if m is a valid array index, insert integer x on position m of the array
     for (;;){}
     return 0;
+}
+void printArray(int arr[]){
+    int index;
+    for (index = 0;index < 8;index++){
+        printf("\tA[%d] = %d\n", index, arr[index]);
+    }
 }
